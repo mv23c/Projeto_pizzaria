@@ -11,28 +11,33 @@ export default function Home() {
     <Head>
       <title>SujeitoPizza - Faça seu login</title>
     </Head>
+    
     <div className={styles.containerCenter}>
       <Image src={logoImg} alt="Logo Sujeito Pizzaria" />
-    </div>
-    <div className={styles.login}>
-      <form>
-        <Input
-          placeholder="Digite seu email" 
-          type="text"
-        />
+    
+      <div className={styles.login}>
+        <form>
+          <Input
+            placeholder="Digite seu email" 
+            type="text"
+          />
 
-        <Input
-          placeholder="Sua senha" 
-          type="password"
-        />
+          <Input
+            placeholder="Sua senha" 
+            type="password"
+          />
 
-        <Button 
-          type="submit"
-          loading={false}
-        >
-          Cadastrar
-        </Button>
-      </form>
+          <Button 
+            type="submit"
+            loading={false}
+          >
+            Acessar
+          </Button>
+        </form>
+
+        <a className={styles.text}>Não possui uma conta? Cadastre-se</a>
+
+      </div>
     </div>
     </>
   )
