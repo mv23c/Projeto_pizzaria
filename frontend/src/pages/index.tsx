@@ -84,3 +84,7 @@ export const getServerSideProps = canSSRGuest(async (ctx) => {
     props: {}
   }
 })
+
+/* 
+  - Quando executamos a função getServerSideProps, podemos fazer uma chamada a api como uma requisição http, retornar algo que vai pode ser acessado no componente através das props.
+*/
