@@ -22,6 +22,9 @@ export function Header(){
                     <Link href="/product" className={styles.Link}>
                         Cardápio
                     </Link>
+                    <Link href="/teste" className={styles.Link}>
+                        Teste
+                    </Link>
 
                     <button onClick={signOut}>
                         <FiLogOut color='#FFF' size={24} />
