@@ -63,11 +63,15 @@ export const getServerSideProps = canSSRAuth(async (ctx) => {
     const apiClient = setupAPIClient(ctx);
     const response = await apiClient.get('/orders');
 
-    // console.log(response.data);
-
     return {
         props: {
             orders: response.data
         }
     }
 })
+
+// export const getServerSideProps = canSSRAuth(async (ctx) => {
+//     return {
+//         props: {}
+//     }
+// })
